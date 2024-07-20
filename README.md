@@ -1,4 +1,4 @@
-# @mighty-little/router
+# @mightylittle/router
 
 > Simple regex-based URL dispatcher for browser apps
 
