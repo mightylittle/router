@@ -1,0 +1,40 @@
+{
+  "name": "@mightylittle/router",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Simple, regex-based URL dispatcher",
+  "source": "src/index.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/router.cjs",
+    "default": "./dist/router.modern.mjs"
+  },
+  "main": "./dist/router.cjs",
+  "module": "./dist/router.module.js",
+  "unpkg": "./dist/router.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "npm run clean && microbundle",
+    "clean": "rm -rf dist/",
+    "start": "npm run clean && microbundle watch",
+    "test": "npm run build && mocha",
+    "typedoc": "typedoc ./src/index.ts"
+  },
+  "author": "John Newton",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.7",
+    "chai": "^5.1.1",
+    "microbundle": "^0.15.1",
+    "mocha": "^10.6.0",
+    "sinon": "^18.0.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typedoc": "^0.26.4",
+    "typescript": "^5.5.3"
+  }
+}

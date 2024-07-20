@@ -1,0 +1,24 @@
+{
+  "name": "@mightylittle/router-demo",
+  "description": "Demo for @mightylittle/router",
+  "source": "src/index.html",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "John Newton",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mightylittle/router": "file:../",
+    "microbundle": "^0.15.1",
+    "typescript": "^4.9.4",
+    "vanjs-core": "^1.5.1",
+    "vite": "^5.3.4",
+    "vite-plugin-dts": "^4.0.0-beta.1"
+  }
+}

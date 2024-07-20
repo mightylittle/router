@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2021",
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "lib": ["es2021", "esnext", "dom", "dom.iterable", "webworker"],
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "./types",
+    "allowSyntheticDefaultImports": false,
+    "isolatedModules": true
+  },
+  "include": ["src/**/*.ts"]
+}
